@@ -40,7 +40,7 @@ const Header = ({ siteTitle }) => (
     <div>
       <ul className="hb_menu">
         <li><Link to="/">home</Link></li>
-        <li><Link to="/page-2">blog</Link></li>
+        <li><Link to="/page-2/">blog</Link></li>
         <li><Link to="#">videos</Link></li>
         <li><Link to="#">events</Link></li>
         <li><Link to="#">workshops</Link></li>
