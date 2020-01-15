@@ -618,7 +618,19 @@ pre tt:after {
   content: "";
 }
 
-/* Custom -- can refactor later */
+/* Custom -- can refactor later or just move into another css*/
+
+.layout {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.layout div {
+    width: 100%;
+    padding-top: 0;
+    flex: 1;
+}
 
 .main_jumbo:before {
   content: "";
@@ -642,6 +654,17 @@ pre tt:after {
   margin-left: -200px;  
 }
 
+footer {
+  background-color:#252525;
+  color: white;
+  font-size: 11px;
+  padding: 2rem 1rem;
+}
+
+footer a {
+    color: white;
+}
+
 
 footer h6 {
   font-size: 11px;
@@ -650,6 +673,7 @@ footer h6 {
 
 ul.footer_list li {
   margin-bottom: 0.5rem;
+  list-style-type: square;
 }
 
 

@@ -1,29 +1,56 @@
 header {
     font-family: "Raleway";
     margin-bottom: 0;
+    display: flex;
+    flex-direction: row;
+    background: #ffc500;
 }
+.dark header {
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white;
+}
+header div {
+    margin: 0 auto;
+    width: 100%;
+    padding-left: 20px;
+}
+ 
 header div:first-child {
+    padding-top: 20px;
     width:50%;
+    display: inline-block;
+
 }
 header div:last-child {
-    padding-top: 40px;
+    width: 50%;
+    display: inline-block;
+    padding-top: 20px;
     padding-right: 50px;
+    text-align: right;
 }
-header h1 {
+header h1.hb_logo {
     font-family: "Europa-Bold";
     text-transform: lowercase;
 }
-header h1 a {
+header h1.hb_logo a {
     color: #252525 !important;
+}
+.dark header h1.hb_logo a {
+    color: white !important;
 }
 
 header .hb_menu li a {
     color: #252525;
     text-decoration: none;
 }
+.dark header .hb_menu li a {
+    color: white !important;
+}
 
 header .hb_menu {
-    font-size: 0.65rem;
+    font-size: 1rem;
 }
 
 header .hb_menu li {
@@ -37,4 +64,13 @@ header .hb_menu li:after {
 }
 header .hb_menu li:last-child:after {
    content:"";
+}
+
+@media screen and (max-width: 719px){
+    header h1.hb_logo {
+        font-size: 1.5rem;
+    }
+    header .hb_menu {
+        font-size: 0.75rem;
+    }
 }
