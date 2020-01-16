@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('typography.css');
 
 body {
     font-family: "Open Sans";
 }
+a:hover { text-decoration: none;}
 
 .main_jumbo {
     background: url(../images/person-coding.jpg);

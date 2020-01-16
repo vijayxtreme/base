@@ -627,9 +627,34 @@ pre tt:after {
 }
 
 .layout div {
-    width: 100%;
-    padding-top: 0;
+    /* width: 100%; */
+    /* padding-top: 0; */
     flex: 1;
+}
+
+.hbicon {
+  display: inline-block;
+  background: url('../svgs/hbicon.svg');
+  height: 50px;
+  width: 50px;
+  position: relative;
+  top: -10px;
+  margin-right:10px;
+  border: 1px solid #666666;
+  border-radius: 4px;
+}
+.hb.dark .hbicon {
+  border: 1px solid rgba(255, 255, 255, 0.863);
+}
+.spacer-sm {
+  margin-top:20px;
+  margin-bottom: 20px;
+}
+.spacer-lg {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding-top:20px;
+  padding-bottom: 20px;
 }
 
 .main_jumbo:before {
@@ -654,11 +679,25 @@ pre tt:after {
   margin-left: -200px;  
 }
 
+.placeholder {
+  background: #ccc;
+  height: 320px;
+  width: 100%;
+}
+
 footer {
-  background-color:#252525;
+  background: #314755;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #26a0da, #314755);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #26a0da, #314755); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
   color: white;
   font-size: 11px;
   padding: 2rem 1rem;
+  padding-bottom:80px;
+}
+
+footer h2 {
+  font-family: "Catamaran";
 }
 
 footer a {

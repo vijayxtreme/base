@@ -1,0 +1,14 @@
+.story {
+    background: #252525;
+    color: white;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    margin-top: 80px;
+}
+.story img {
+    height: 300px;    
+}
+
+.story h1 {
+    font-family: "Righteous";
+}

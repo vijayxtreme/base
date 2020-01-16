@@ -6,6 +6,7 @@ import "./header.css"
 const Header = ({ siteTitle }) => (
   <header>
     <div>
+      <span className="hbicon"></span>
       <h1 className="hb_logo">
         <Link to="/">
           {siteTitle} 

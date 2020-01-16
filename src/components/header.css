@@ -1,10 +1,23 @@
+@import url('typography.css');
+
 header {
+
     font-family: "Raleway";
     margin-bottom: 0;
     display: flex;
     flex-direction: row;
-    background: #ffc500;
+    background: #f6db18;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #f6db18, #F2C94C);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #f6db18, #F2C94C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
+
+header.fixed {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
 .dark header {
     background: #000000;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to bottom, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
@@ -31,7 +44,8 @@ header div:last-child {
     text-align: right;
 }
 header h1.hb_logo {
-    font-family: "Europa-Bold";
+    display: inline-block;
+    font-family: "Catamaran";
     text-transform: lowercase;
 }
 header h1.hb_logo a {
@@ -50,6 +64,7 @@ header .hb_menu li a {
 }
 
 header .hb_menu {
+    display: inline-block;
     font-size: 1rem;
 }
 

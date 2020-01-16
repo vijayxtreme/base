@@ -2,6 +2,7 @@ import React from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Midsection from "../components/midsection";
 import Typewriter from 'typewriter-effect/dist/core';
 import "../components/index.css"
 
@@ -12,7 +13,8 @@ class IndexPage extends React.Component {
     super(props);
     this.state = {
       strings : ['Level Up Your Skills'],
-      darkModeOn: false
+      darkModeOn: false,
+      time: new Date()
     }
     this.darkMode = this.darkMode.bind(this);
   }
@@ -22,6 +24,11 @@ class IndexPage extends React.Component {
       autoStart: true,
       loop: true
     });
+    
+    if(this.state.time.getHours() > 17){
+      this.darkMode()
+    }
+
   }
   darkMode(){
     this.setState({'darkModeOn': !this.state.darkModeOn});
@@ -34,9 +41,8 @@ class IndexPage extends React.Component {
           <div className="main_jumbo">
             <h1 id="typewriter"></h1>
           </div>
+          <Midsection />
           <div className="container">
-            Stuff here later
-            <button onClick={this.darkMode}>Dark Mode</button>
           </div> 
         </Layout>
       </div>
