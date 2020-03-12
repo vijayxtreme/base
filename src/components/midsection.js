@@ -1,6 +1,4 @@
 import React, { Component } from "react";
-import "bootstrap/dist/css/bootstrap.css";
-import "./midsection.css";
 import es6Img from "../images/es6-promo-course.png";
 import Tile from "./tile.js";
 import Story from "./story.js";

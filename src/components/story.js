@@ -1,5 +1,4 @@
 import React from "react";
-import "./story.css";
 
 export default function Story(props){
     const {content, title, buttonMessage, linkTo, media } = props

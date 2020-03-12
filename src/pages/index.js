@@ -4,9 +4,6 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Midsection from "../components/midsection";
 import Typewriter from 'typewriter-effect/dist/core';
-import "../components/index.css"
-
-
 
 class IndexPage extends React.Component {
   constructor(props){
@@ -25,9 +22,9 @@ class IndexPage extends React.Component {
       loop: true
     });
     
-    if(this.state.time.getHours() > 17){
-      this.darkMode()
-    }
+    // if(this.state.time.getHours() > 17){
+    //   this.darkMode()
+    // }
 
   }
   darkMode(){

@@ -1,0 +1,19 @@
+.page-header {
+    background: #12c2e9;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #12C2E9, #C471ED, #F64F59);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #12C2E9, #C471ED, #F64F59); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white;
+    min-height: 240px;
+
+    h1 {
+        margin-top: 4rem;
+        font-family: "Righteous";
+    }
+}
+
+.page-inside {
+    font-family: "Raleway";
+    padding-top: 3rem;
+}
+
+.logo { font-family: "Catamaran"; }

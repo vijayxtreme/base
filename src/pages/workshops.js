@@ -4,6 +4,6 @@ import PageHeader from "../components/pageheader"
 
 export default () => (
     <Layout>
-        <PageHeader title="Blog Page" />
+        <PageHeader title="Workshops" />
     </Layout>
 )

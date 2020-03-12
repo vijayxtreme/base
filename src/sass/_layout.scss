@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Tomorrow&display=swap');
+
 
 html {
   font-family: sans-serif;
@@ -685,35 +685,7 @@ pre tt:after {
   width: 100%;
 }
 
-footer {
-  background: #314755;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to top, #26a0da, #314755);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to top, #26a0da, #314755); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
-  color: white;
-  font-size: 11px;
-  padding: 2rem 1rem;
-  padding-bottom:80px;
-}
 
-footer h2 {
-  font-family: "Catamaran";
-}
-
-footer a {
-    color: white;
-}
-
-
-footer h6 {
-  font-size: 11px;
-  padding-left: 10px;
-}
-
-ul.footer_list li {
-  margin-bottom: 0.5rem;
-  list-style-type: square;
-}
 
 
 @media only screen and (max-width: 480px) {
