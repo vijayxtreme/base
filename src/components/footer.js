@@ -7,7 +7,7 @@ function Footer(props){
         <div className="container">
           <div className="row">
             <div className="col-sm-3">
-            <h3 class="logo">hackbuddy</h3>
+            <h3 className="logo">hackbuddy</h3>
             <p>Your place to learn and grow as a programmer!</p>
             © {new Date().getFullYear()}, HackBuddy & &nbsp;
             <a href="https://www.javascriptla.net">JavaScriptLA</a>, LLC

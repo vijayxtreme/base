@@ -2,6 +2,7 @@ import React from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+
 import Midsection from "../components/midsection";
 import Typewriter from 'typewriter-effect/dist/core';
 
@@ -38,6 +39,7 @@ class IndexPage extends React.Component {
           <div className="main_jumbo">
             <h1 id="typewriter"></h1>
           </div>
+
           <Midsection />
           <div className="container">
           </div> 
