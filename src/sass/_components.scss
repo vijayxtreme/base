@@ -14,12 +14,30 @@
 .page-inside {
     font-family: "Raleway";
     padding-top: 3rem;
-
+    text-align: left;
     ul {
-        text-align: left;
+      
         li {
-            
+            display: inline;
+            &:after {
+                content:" | ";
+                display: "inline-block";
+            }
+            &:last-child {
+                &:after {
+                    content: "";
+                }
+            }
         }
+    }
+    pre.prettyprint {
+        display:block;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        box-sizing: border-box;
+        border: 0;
     }
 }
 

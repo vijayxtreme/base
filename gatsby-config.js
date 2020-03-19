@@ -1,19 +1,30 @@
 module.exports = {
-  pathPrefix: ``,
   siteMetadata: {
     title: `HackBuddy`,
     description: `Coming soon`,
     author: `@javascriptla`,
   },
   plugins: [
+    `gatsby-plugin-twitter`,
+    `gatsby-plugin-htaccess`,
     `gatsby-plugin-sass`,
     `gatsby-transformer-remark`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `content`,
-        path: `${__dirname}/src/markdowns`
+        path: `${__dirname}/src/markdowns`,
+        gfm: true
       }
+    },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-prismjs`,
+          }]
+        }
     },
     `gatsby-plugin-react-helmet`,
     {

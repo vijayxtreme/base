@@ -11,7 +11,7 @@ export default function Story(props){
                     </div>
                     <div className="col-md">
                         <h1>{title}</h1>
-                        <p>{content}</p>
+                        {content}
                         <a href={linkTo} target="_blank" className="btn btn-warning">{buttonMessage}</a>
                     </div>        
                 </div>

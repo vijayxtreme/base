@@ -634,7 +634,8 @@ pre tt:after {
 
 .hbicon {
   display: inline-block;
-  background: url('../svgs/hbicon.svg');
+  background: url('../images/hbicon.png') no-repeat;
+  background-size:contain;
   height: 50px;
   width: 50px;
   position: relative;

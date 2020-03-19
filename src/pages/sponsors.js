@@ -1,9 +1,37 @@
 import React from "react"
 import Layout from "../components/layout"
-import PageHeader from "../components/pageheader"
+import Page from "../components/page"
+import es6Img from "../images/es6-promo-course.png";
+import SEO from "../components/seo"
+import Story from "../components/story"
+import { useStaticQuery, graphql } from "gatsby"
 
-export default () => (
-    <Layout>
-        <PageHeader title="Sponsors" />
-    </Layout>
-)
+export default () => {
+    const data = useStaticQuery(
+        graphql`
+            query {
+                allMarkdownRemark {
+                    edges {
+                      node {
+                        html
+                        headings {
+                          value
+                        }
+                        frontmatter {
+                          title
+                          date
+                        }
+                      }
+                    }
+                  }
+            }
+    `)
+
+    const output =  <Page data={data} title="Sponsors" />
+    return(
+        <Layout>
+            <SEO title="Sponsors" />
+            {output}
+        </Layout>
+    )
+}
