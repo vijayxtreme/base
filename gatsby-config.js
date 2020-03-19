@@ -7,6 +7,15 @@ module.exports = {
   plugins: [
     `gatsby-plugin-twitter`,
     `gatsby-plugin-htaccess`,
+    {
+      resolve: 'gatsby-plugin-htaccess',
+      options: {
+        RewriteBase: '/public/',
+        https: true,
+        www: true,
+        host: `www.hackbuddy.com`
+      }
+    },
     `gatsby-plugin-sass`,
     `gatsby-transformer-remark`,
     {
