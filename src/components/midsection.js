@@ -18,13 +18,20 @@ export default class Midsection extends Component {
         
         return (
             <section id="midsection">
+                <div className="container text-center">
+                    <h2 className="spacer-lg">Meetup Videos</h2>
+                    <div>
+                    <iframe className="video" width="100%" height="560" src="https://www.youtube.com/embed/21u0ml7BePA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
                 <div className="container">
-                    <div className="row spacer-lg">
+                    <h2 className="text-center spacer-lg">Additional Content</h2>
+                    <div className="row">
                         <Tile content="Upcoming Meetups" />
                         <Tile content="Videos" />
                         <Tile content="Tutorials" />
                     </div>
-                    <div className="row">
+                    <div className="row spacer-lg">
                         <Tile content="Speakers" />
                         <Tile content="Sponsors" />
                         <Tile content="Contact" />
@@ -34,7 +41,7 @@ export default class Midsection extends Component {
                  media={<img src={es6Img} />}
                  title="Learn ES6" 
                  content={content} 
-                 linkTo={`https://hackbuddy.teachable.com`} 
+                 linkTo={`https://hackbuddy.teachable.com/p/roadmap-to-es6`} 
                  buttonMessage={`Yes, Give Me The Course`} />
             </section>
 

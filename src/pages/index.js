@@ -39,7 +39,7 @@ class IndexPage extends React.Component {
           <div className="main_jumbo">
             <h1 id="typewriter"></h1>
           </div>
-
+          
           <Midsection />
           <div className="container">
           </div> 
