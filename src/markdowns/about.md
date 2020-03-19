@@ -11,7 +11,7 @@ console.log(`Welcome to HackBuddy`)
 ```
 &nbsp;
 
-Our mission is to help you get better at coding.  While there's [JavaScriptLA](https://javascriptla.net), which is great for learning JavaScript, we felt we needed to do more for our members who might be confused about entering different "Web Stacks" after getting employed.
+Our mission is to help you get better at coding.  While there's <a href="https://javascriptla.net" target="_blank">JavaScriptLA</a>, which is great for learning JavaScript, we felt we needed to do more for our members who might be confused about entering different "Web Stacks" after getting employed.
 
 The real world isn't just HTML, CSS, and JavaScript; you also have software on the "backend" running on systems like Windows and Linux using languages like **Python, Rails, Java, .NET, C++, PHP, SQL, NoSQL, Perl, Node.js** and / or more.  Compound all that with new terms / buzzwords that have popped up in the last few years like **"Cloud Computing", "Docker", "Azure", "AWS"**, and you'll start to realize that web development altogether is quite the proverbial "beast" to tackle.
 

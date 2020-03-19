@@ -16,6 +16,15 @@ footer {
   footer a {
       color: white;
   }
+
+  footer a:hover {
+    text-decoration: underline;
+    color:white;
+  }
+
+  footer a:active {
+    color: #FFC007;
+  }
   
   
   footer h6 {
