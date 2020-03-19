@@ -42,7 +42,7 @@ export default ({children}) => {
            media={<img src={es6Img} />}
            title="Learn ES6" 
            content={content} 
-           linkTo={`https://hackbuddy.teachable.com`} 
+           linkTo={`https://hackbuddy.teachable.com/p/roadmap-to-es6`} 
            buttonMessage={`Yes, Give Me The Course`} />
         </Layout>
     )
