@@ -4,30 +4,13 @@ import es6Img from "../images/es6-promo-course.png";
 import SEO from "../components/seo"
 import Story from "../components/story"
 import Page from "../components/page"
-import { useStaticQuery, graphql } from "gatsby"
+import { graphql } from "gatsby"
 
-export default ({children}) => {
-    const data = useStaticQuery(
-        graphql`
-            query {
-                allMarkdownRemark {
-                    edges {
-                      node {
-                        html
-                        headings {
-                          value
-                        }
-                        frontmatter {
-                          title
-                          date
-                        }
-                      }
-                    }
-                  }
-            }
-    `)
+export default ({data}) => {
+ 
+    const post = data.markdownRemark
 
-    let output =  <Page data={data} title="About" />
+    let output =  <Page post={post} title={post.frontmatter.title} />
 
 
     const content = <div><p>Become a better programmer today! Learn the tricks
@@ -36,8 +19,8 @@ export default ({children}) => {
     return(
       
         <Layout>
-          <SEO title="About" />
-           {output}
+          <SEO title={`Blog | ${post.frontmatter.title}`} />
+         {output}
            <Story 
            media={<img src={es6Img} />}
            title="Learn ES6" 
@@ -47,3 +30,15 @@ export default ({children}) => {
         </Layout>
     )
 }
+
+export const query = graphql`
+    query($slug: String!){
+        markdownRemark(fields:{ slug: { eq: $slug }}) {
+            html
+            frontmatter {
+                title
+            }
+        }
+    }
+`
+
