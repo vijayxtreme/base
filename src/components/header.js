@@ -23,6 +23,7 @@ const Header = ({ siteTitle }) => (
     <div>
       <ul className="hb_menu">
         <li><Link to="/about">about</Link></li>
+        <li><Link to="/meetups">meetups</Link></li>
         <li><Link to="/workshops">workshops</Link></li>
         <li><Link to="/products">products</Link></li>
         <li><Link to="/sponsors">sponsors</Link></li>
