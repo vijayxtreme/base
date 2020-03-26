@@ -95,7 +95,11 @@ header .hb_menu li:last-child:after {
     header {
         div {
             padding: $padding;
+            &:first-child {
+                width: 100%;
+            }
             &:last-child {
+                display:none;
                 padding: $padding;
             }
         }
@@ -106,5 +110,11 @@ header .hb_menu li:last-child:after {
     .hbicon {
         top: 5px;
     }
-    
+    .main_jumbo h1#typewriter {
+        display: none;
+    }
+    main .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
