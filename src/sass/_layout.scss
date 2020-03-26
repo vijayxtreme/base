@@ -704,4 +704,15 @@ pre tt:after {
   html {
     font-size: 100%;
   }
+  .tile.col-xs {
+    flex-direction: column;
+    flex: none;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .spacer-lg {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
 }
+
