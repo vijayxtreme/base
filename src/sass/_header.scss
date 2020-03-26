@@ -89,3 +89,22 @@ header .hb_menu li:last-child:after {
         font-size: 0.75rem;
     }
 }
+
+@media screen and (max-width: 480px){
+    $padding: 20px;
+    header {
+        div {
+            padding: $padding;
+            &:last-child {
+                padding: $padding;
+            }
+        }
+        .hb_menu {
+            display: none;
+        }
+    }
+    .hbicon {
+        top: 5px;
+    }
+    
+}
