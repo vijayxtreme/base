@@ -13,3 +13,9 @@ background: linear-gradient(to top, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ 
 .tile:last-child {
     margin-right: 0;
 }
+
+@media only screen and (max-width: 480px) {
+    .tile{
+        width:100%;
+    }
+  }
