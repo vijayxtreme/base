@@ -36,3 +36,16 @@ footer {
     margin-bottom: 0.5rem;
     list-style-type: square;
   }
+  .mobileLogo{
+    visibility: hidden;
+  }
+
+  @media only screen and (max-width: 480px) {
+    footer .container .row{
+        display: none;
+    }
+    .mobileLogo{
+      visibility: visible;
+      text-align: center;
+    }
+  }

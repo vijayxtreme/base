@@ -6,8 +6,10 @@ function Footer(props){
     return (
         <footer>
         <div className="container">
+          <h3 className="mobileLogo">hackbuddy</h3>
           <div className="row">
             <div className="col-sm-3">
+              
             <h3 className="logo">hackbuddy</h3>
             <p>Your place to learn and grow as a programmer!</p>
             © {new Date().getFullYear()}, <Link to="/">HackBuddy</Link> & &nbsp;
