@@ -9,6 +9,7 @@ const SocialPlug = ({
     socialLink,
 }) => {
     return (
+        <div className="main_jumbo">
         <header className="App-header">
             <div className='overlay'>
                 <div className='content'>
@@ -20,7 +21,7 @@ const SocialPlug = ({
                     </p>
                 </div>
                 <div className='imgWrap'>
-                    <img className='socialLogo' src={logoUrl} />
+                    <img alt={socialName} className='socialLogo' src={logoUrl} />
                     <p>{socialName}</p>
                 </div>
                 <a
@@ -30,10 +31,12 @@ const SocialPlug = ({
                     rel="noopener noreferrer"
                 >
                     {/* <button></button> */}
-                    <img className='jsButton' src="https://res.cloudinary.com/drbxih6it/image/upload/v1585770625/Discover_Our_Server_iad9rh.png" />
+                    <img alt="Discord" className='jsButton' src="https://res.cloudinary.com/drbxih6it/image/upload/v1585770625/Discover_Our_Server_iad9rh.png" />
                 </a>
             </div>
         </header>
+        </div>
+
     );
 }
 

@@ -21,7 +21,7 @@ export default class Midsection extends Component {
                 <div className="container text-center">
                     <h2 className="spacer-lg">Meetup Videos</h2>
                     <div>
-                    <iframe className="video" width="100%" height="560" src="https://www.youtube.com/embed/21u0ml7BePA?autoplay=1&mute=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe>
+                    <iframe className="video" width="100%" height="560" src="https://www.youtube.com/embed/21u0ml7BePA?autoplay=1&mute=1" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen="allowfullscreen"></iframe>
                     </div>
                 </div>
                 <div className="container">

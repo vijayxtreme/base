@@ -1,10 +1,12 @@
 import React from "react"
-
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-
 import Midsection from "../components/midsection";
 import Typewriter from 'typewriter-effect/dist/core';
+import Slider from "react-slick";
+import SocialPlug from "../components/SocialPlug";
+import {SocialContent} from '../components/SocialContent';
+
 
 class IndexPage extends React.Component {
   constructor(props){
@@ -17,29 +19,33 @@ class IndexPage extends React.Component {
     this.darkMode = this.darkMode.bind(this);
   }
   componentDidMount(){
-    new Typewriter('#typewriter', {
-      strings: this.state.strings,
-      autoStart: true,
-      loop: true
-    });
-    
-    // if(this.state.time.getHours() > 17){
-    //   this.darkMode()
-    // }
-
   }
   darkMode(){
     this.setState({'darkModeOn': !this.state.darkModeOn});
   }
   render(){
+    const settings = {
+      dots: false,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 1,
+      slidesToScroll: 1
+    };
+    const socialPlugs = SocialContent.map((content) => {
+      return (
+        <SocialPlug
+          key={content.id}
+          {...content}
+        />
+      )
+    });
     return (
       <div className={`hb ${this.state.darkModeOn ? 'dark':''}`}>
         <Layout>
           <SEO title="Home" />
-          <div className="main_jumbo">
-            <h1 id="typewriter"></h1>
-          </div>
-          
+              <Slider {...settings}>
+                {socialPlugs}
+              </Slider>        
           <Midsection />
           <div className="container">
           </div> 
