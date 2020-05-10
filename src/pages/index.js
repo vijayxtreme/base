@@ -5,7 +5,6 @@ import Header from "../components/header"
 import Ad from "../components/ad" 
 import News from "../components/news"
 
-import signature from "../images/sig.svg"
 
 const IndexPage = () => {
 
@@ -70,7 +69,7 @@ const IndexPage = () => {
               <p>As much as I love working in JavaScript, I want to also explore other coding languages and development environments.  I also want to become an all around better engineer, someone who is a true full-stack engineer that can interface with all kinds of software, understand all kinds of data, algorithms and even beyond with AI. I hope that’s exciting to you too.</p>
               
               <p>I hope you will partake with me on this new journey! Stay tuned!</p>
-              <p><img src={signature} alt="Vijay Menon" /></p>
+              <p className="pt4 pb4"><span className="sig">Vijay Menon</span></p>
               <p style={{fontWeight: 600}}>Lead Organizer, JavaScriptLA & HackBuddy</p>
             </div>
           </section> 
