@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import es6Img from "../images/es6-promo-course.png";
 import SEO from "../components/seo"
-import Story from "../components/story"
+import Ad from "../components/ad"
 import Page from "../components/page"
 import { graphql } from "gatsby"
 
@@ -21,12 +21,7 @@ export default ({data}) => {
         <Layout>
           <SEO title={`Blog | ${post.frontmatter.title}`} />
          {output}
-           <Story 
-           media={<img src={es6Img} />}
-           title="Learn ES6" 
-           content={content} 
-           linkTo={`https://hackbuddy.teachable.com/p/roadmap-to-es6`} 
-           buttonMessage={`Yes, Give Me The Course`} />
+           <Ad />
         </Layout>
     )
 }

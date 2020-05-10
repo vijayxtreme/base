@@ -1,51 +1,18 @@
 footer {
-    background: #314755;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to top, #26a0da, #314755);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to top, #26a0da, #314755); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-      
+  background: #25A8E0;  /* fallback for old browsers */
+  color: white;
+  font-size: 11px;
+}
+
+footer h2 {
+  font-family: "Catamaran";
+}
+
+footer a {
     color: white;
-    font-size: 11px;
-    padding: 2rem 1rem;
-    padding-bottom:80px;
-  }
-  
-  footer h2 {
-    font-family: "Catamaran";
-  }
-  
-  footer a {
-      color: white;
-  }
+}
 
-  footer a:hover {
-    text-decoration: underline;
-    color:white;
-  }
-
-  footer a:active {
-    color: #FFC007;
-  }
-  
-  
-  footer h6 {
-    font-size: 11px;
-    padding-left: 10px;
-  }
-  
-  ul.footer_list li {
-    margin-bottom: 0.5rem;
-    list-style-type: square;
-  }
-  .mobileLogo{
-    visibility: hidden;
-  }
-
-  @media only screen and (max-width: 480px) {
-    footer .container .row{
-        display: none;
-    }
-    .mobileLogo{
-      visibility: visible;
-      text-align: center;
-    }
-  }
+footer a:hover {
+  text-decoration: underline;
+  color:white;
+}

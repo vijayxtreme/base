@@ -1,4 +1,3 @@
-@import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 @import "../../node_modules/prismjs/themes/prism-okaidia.css";
 @import "../../node_modules/@fortawesome/fontawesome-free/css/all.css";
 @import "typography";
@@ -7,7 +6,8 @@
 @import "header";
 @import "main";
 @import "midsection";
-@import "story";
+@import "news";
+@import "ad";
 @import "tile";
 @import "footer";
 @import "socialplugin";

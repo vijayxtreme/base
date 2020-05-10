@@ -7,7 +7,7 @@ export default (props) => {
         <section className="page-header">
             <div className="row">
                 <div className="container">
-                    <h1 className="text-center">{title}</h1>
+                    <h1 className="tc pt5">{title}</h1>
                 </div>
             </div>
         </section>

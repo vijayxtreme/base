@@ -28,8 +28,10 @@
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-helmet": "^5.2.1",
+    "react-masonry-component": "^6.2.1",
     "react-siema": "^1.0.1",
     "react-slick": "^0.25.2",
+    "tachyons": "^4.12.0",
     "typewriter-effect": "^2.12.2"
   },
   "devDependencies": {

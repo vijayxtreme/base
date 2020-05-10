@@ -1,13 +1,58 @@
-.page-header {
-    background: #12c2e9;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #12C2E9, #C471ED, #F64F59);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #12C2E9, #C471ED, #F64F59); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+%inputstyling {
+    width: 100%;
+    border-radius: 2px;
+    margin-top: .75rem;
+    padding: 0.75rem 1rem;
+    border: none;
+}
+
+%cta {
+    @extend %inputstyling;
+    background: #12C2E9;
+    border-radius: 6px;
     color: white;
-    min-height: 240px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 32px;
+    cursor: pointer;
+}
+
+.error {
+    color: red;
+}
+
+button.cta {
+    @extend %cta;
+}
+
+form.newsletter {
+    background: #252525;
+    border: 1px solid #979797;
+
+    input[type=text] {
+        @extend %inputstyling;
+        font-family: "Open Sans";
+        font-weight: 300;
+        font-size: 21px;
+    }
+    button {
+        @extend %cta;
+    }
+    .consent {
+        font-size: 11px;
+        font-style: italic;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+}
+
+.page-header {
+    @extend %bgCool;
+    color: white;
+    height: 240px;
 
     h1 {
-        margin-top: 4rem;
-        font-family: "Righteous";
+        margin-top:0;
+        font-family: "Catamaran";
     }
 }
 
@@ -15,6 +60,10 @@
     font-family: "Raleway";
     padding-top: 3rem;
     text-align: left;
+    p {
+        line-height: 2rem;
+    }
+
     ul {
       
         li {
@@ -54,3 +103,25 @@
     padding-top: 3rem;
     text-align: left;
 }
+
+@media only screen and (max-width: 1199px){
+    
+}
+  
+  
+@media only screen and (max-width: 480px) {
+    button.cta {
+        font-size: 1.25rem;
+    }
+    form.newsletter {
+    
+        input[type=text] {
+            font-size: 1.2rem;
+        }
+        button {
+            font-size: 1.25rem;
+        }
+
+    }
+}
+  
