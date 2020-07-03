@@ -16,7 +16,7 @@ const Header = ({ siteTitle, className }) => (
             fontSize: `11px`,
             top: `-20px`,
             fontStyle: `italic`
-          }}>BETA</sup>
+          }}>BETA!</sup>
          
         </Link>
        </span>
