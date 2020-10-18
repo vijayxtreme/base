@@ -3,12 +3,12 @@ import React from "react";
 export default function Ad(props){
     const {content, title, buttonMessage, linkTo, media } = props
     return (
-        <div className="ad pt3 pb5">
+        <div className="">
             <div className="container tc">
                 <h2>Stuck At Home? Why Not Spend Time Mastering The New JavaScript Standard?</h2>
                 <h3>Learn All The Following In Six Hours of Guided Video On ES6:</h3>
-                <div className="benefits-three-col flex-ns flex-wrap-ns cf">
-                    <div className="fl-ns w-third-ns">
+                <div className="benefits-three-col">
+                    <div className="">
                         <ul>
                             <li>New ways to declare variables</li>
                             <li>let, const, var differences</li>
@@ -17,7 +17,7 @@ export default function Ad(props){
                             <li>Arrow functions & scope</li>
                         </ul>
                     </div>
-                    <div className="fl-ns w-third-ns">
+                    <div className="">
                         <ul>
                             <li>Spread vs Rest Operator</li>
                             <li>Objects and Class Syntax</li>
@@ -26,7 +26,7 @@ export default function Ad(props){
                             <li>Synchronous vs Asynchronous</li>
                         </ul>
                     </div>
-                    <div className="fl-ns w-third-ns">
+                    <div className="">
                         <ul>
                             <li>Callback Functions</li>
                             <li>Promises, All, Race</li>
@@ -36,11 +36,11 @@ export default function Ad(props){
                         </ul>
                     </div>
                 </div>
-                <div className="tc mt4">
+                <div className="">
                     <button className="cta" onClick={()=>{
-                        let url = `https://hackbuddy.teachable.com/p/roadmap-to-es6`
+                        let url = `https://www.udemy.com/course/guide-to-es6-syntax-in-javascript/`
                         window.open(url, "_blank")
-                    }}>Get The Full Video Course For Just $39</button>
+                    }}>Get The Full Video Course Now On Udemy!</button>
                 </div>
             </div>
             

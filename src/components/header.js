@@ -1,37 +1,33 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import logo from "../images/hackbuddy.svg";
+
+const links = [
+  { name: `Blog`, linkTo: `blog` },
+  { name: `About`, linkTo: `about` },
+  { name: `Speak For Us`, linkTo: `speak-for-us` },
+  { name: `Sponsor Us`, linkTo: `sponsor-us` },
+  { name: `Shop`, linkTo: `shop` },
+]
 
 const Header = ({ siteTitle, className }) => (
-  <header className="cf pt3 pb3-ns">
-    <div className="pl4 fl w-100 w-50-ns cf">
-      <div className="hbicon_wrap fl w-40 w-20-m w-10-ns">
-        <span className="hbicon"></span>
+  <header className="">
+    <div className="container-fluid">
+      <div className="row pt-3 pb-3">
+        <div className="col-xs-12 col-lg-3">
+          <Link to="/"><img style={{height:`auto`, width:`400px`}} src={logo} /></Link>
+        </div>
+        <div className="col-xs-12 col-lg-9 text-right">
+          <ul className="list-inline pt-5">
+            {links.map(link => (
+              <li className="list-inline-item">
+                <Link to={`/${link.linkTo}`}>{link.name}</Link>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
-      <div className="hb_logo fl w-60 w-80-m w-90-ns">
-        <span>
-        <Link to="/">
-          hackbuddy
-          <sup style={{
-            fontSize: `11px`,
-            top: `-20px`,
-            fontStyle: `italic`
-          }}>BETA!</sup>
-         
-        </Link>
-       </span>
-        <p className="pt0 mt0" style={{
-          fontSize: `11px`,
-          marginBottom: `.5rem`,
-          fontStyle: `italic`,
-        }}>by JavaScriptLA</p>
-      </div>
-    </div>
-    <div className="fl w-100 w-50-ns tc tr-ns pr4">
-      <ul className="hb_menu">
-        <li><Link to="/about">events</Link></li>
-        <li><Link to="/sponsors">sponsors</Link></li>
-      </ul>
     </div>
   </header>
 )

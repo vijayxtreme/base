@@ -22,7 +22,7 @@ exports.onCreateNode = ({node, getNode, actions}) => {
         }    
     }
     
-    nodeFieldPerType(`blog`, value => `blog${value}` )
+    nodeFieldPerType(`blog`, value => `/blog${value}` )
     nodeFieldPerType(`markdowns`, value => `${value}` )
 
 }

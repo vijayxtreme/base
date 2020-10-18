@@ -16,7 +16,7 @@ export default ({data}) => {
         <Layout>
           <SEO title="About" />
          {output}
-          <Ad />
+
         </Layout>
     )
 }

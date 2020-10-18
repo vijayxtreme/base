@@ -13,15 +13,13 @@ export default ({data}) => {
     let output =  <Page post={post} title={post.frontmatter.title} />
 
 
-    const content = <div><p>Become a better programmer today! Learn the tricks
-    you need to master ES6, the latest in JavaScript programming.</p><p>Are you a beginner? No problem, we can help you. Just study our course and you can be a pro too!</p><p>Get the course today now for FREE!</p></div>
 
     return(
       
         <Layout>
           <SEO title={`Blog | ${post.frontmatter.title}`} />
          {output}
-           <Ad />
+
         </Layout>
     )
 }

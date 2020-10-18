@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="408.5" height="98.876" viewBox="0 0 408.5 98.876">
+  <defs>
+    <filter id="Rectangle_3" x="0" y="0" width="98.876" height="98.876" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feFlood flood-color="#0f0f0f" flood-opacity="0.749"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_3" data-name="Group 3" transform="translate(-132.5 -52.5)">
+    <text id="hackbuddy" transform="translate(243 99)" font-size="38" font-family="SourceSansPro-Semibold, Source Sans Pro" font-weight="600"><tspan x="0" y="0">hackbuddy</tspan></text>
+    <text id="All_Things_Software_Engineering._Level_UP" data-name="All Things Software Engineering. Level UP" transform="translate(247 131)" font-size="16" font-family="Roboto-MediumItalic, Roboto" font-weight="500" font-style="italic"><tspan x="0" y="0">All Things Software Engineering. Level UP</tspan></text>
+    <g transform="matrix(1, 0, 0, 1, 132.5, 52.5)" filter="url(#Rectangle_3)">
+      <rect id="Rectangle_3-2" data-name="Rectangle 3" width="83.876" height="83.876" rx="4" transform="translate(7.5 7.5)" fill="#fdda0d"/>
+    </g>
+    <text id="h" transform="translate(152.96 100.594)" font-size="36" font-family="SourceSansPro-Semibold, Source Sans Pro" font-weight="600"><tspan x="0" y="0">h</tspan></text>
+    <circle id="Ellipse_1" data-name="Ellipse 1" cx="12.524" cy="12.524" r="12.524" transform="translate(187.792 78.501)" fill="#fff"/>
+    <circle id="Ellipse_2" data-name="Ellipse 2" cx="7.101" cy="7.101" r="7.101" transform="translate(193.072 83.871)"/>
+    <text id="b" transform="translate(169.98 116.626) rotate(90)" font-size="36" font-family="SourceSansPro-Semibold, Source Sans Pro" font-weight="600"><tspan x="0" y="0">b</tspan></text>
+  </g>
+</svg>

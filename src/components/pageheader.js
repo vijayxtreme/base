@@ -1,15 +1,17 @@
 import React from "react"
 
-export default (props) => {
-    const title = props.title
+export default ({title}) => {
+   
     
     return (
-        <section className="page-header">
+        <>
+        <section className="page-header flex-center">
             <div className="row">
                 <div className="container">
-                    <h1 className="tc pt5">{title}</h1>
+                    <h1 className="">{title}</h1>
                 </div>
             </div>
         </section>
+        </>
     )
 }
