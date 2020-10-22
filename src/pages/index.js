@@ -6,6 +6,7 @@ import News from "../components/news"
 import Jumbo from "../components/jumbo"
 import Section from "../components/section";
 
+
 const IndexPage = () => {
   return (
     <div className="home">

@@ -6,7 +6,7 @@ const Jumbo = ({title,cta}) => {
         <Header />
         <div className="container-fluid mb-5 pb-5 flex-center">
           <section className="mainheading">
-            <div class="row">
+            <div className="row">
               <div className="col-lg-9">
                 <h1 className="mt-5 pt-5">
                   {title}

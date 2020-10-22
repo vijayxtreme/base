@@ -1,7 +1,16 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
-import logo from "../images/hackbuddy.svg";
+import logo from "../images/hackbuddy.svg"
+import Container from "react-bootstrap/Container"
+import Row from "react-bootstrap/Row"
+import Col from "react-bootstrap/Col"
+import Nav from "react-bootstrap/Nav"
+import Navbar from "react-bootstrap/Navbar"
+import NavDropdown from "react-bootstrap/NavDropdown"
+import Form from "react-bootstrap/Form"
+import FormControl from "react-bootstrap/FormControl"
+import Button from "react-bootstrap/Button"
 
 const links = [
   { name: `Blog`, linkTo: `blog` },
@@ -13,22 +22,25 @@ const links = [
 
 const Header = ({ siteTitle, className }) => (
   <header className="">
-    <div className="container-fluid">
-      <div className="row pt-3 pb-3">
-        <div className="col-xs-12 col-lg-3">
-          <Link to="/"><img style={{height:`auto`, width:`400px`}} src={logo} /></Link>
-        </div>
-        <div className="col-xs-12 col-lg-9 text-right">
-          <ul className="list-inline pt-5">
-            {links.map(link => (
-              <li className="list-inline-item">
-                <Link to={`/${link.linkTo}`}>{link.name}</Link>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </div>
-    </div>
+    <Navbar bg="light" expand="lg">
+     
+      <Navbar.Brand href="/">
+        <img src={logo} className="logo" />
+      </Navbar.Brand>
+      <Navbar.Toggle aria-controls="basic-navbar-nav" />
+
+      <Navbar.Collapse id="basic-navbar-nav">
+        <Nav className="ml-auto">
+          {links.map((link, item) => {
+            return (
+              <Nav.Link key={item} href={`${link.linkTo}`}>
+                {link.name}
+              </Nav.Link>
+            )
+          })}
+        </Nav>
+      </Navbar.Collapse>
+    </Navbar>
   </header>
 )
 

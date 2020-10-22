@@ -26,4 +26,11 @@ a:hover { text-decoration: none;}
     background-size: cover;
 }
 
-  
+.logo {
+    max-width: 300px;
+}
+
+.row {
+    width: 100%;
+    flex-grow: 1;
+}

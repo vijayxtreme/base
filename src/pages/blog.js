@@ -22,7 +22,7 @@ export default ({ data }) => {
   return (
     <Layout>
       <SEO title="Blog" />
-      <div class="inside">
+      <div className="inside">
         <Header />
         <PageHeader title="Blog" />
         <section className="blog-page-inside">
