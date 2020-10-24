@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from "../components/header"
 const Jumbo = ({title,cta}) => {
+    
     return (
         <div className="jumbo homewrap pb-5">
         <Header />

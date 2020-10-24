@@ -7,7 +7,7 @@ date: 2020-03-11
 
 &nbsp;
 ```javascript
-console.log(`Welcome to HackBuddy`)
+console.log(`This is HackBuddy`)
 ```
 &nbsp;
 
