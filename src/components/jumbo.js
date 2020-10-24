@@ -1,7 +1,11 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import Header from "../components/header"
+import { ToggleContext } from "../components/layout";
+
 const Jumbo = ({title,cta}) => {
     
+    const { show, setShow } = useContext(ToggleContext)
+
     return (
         <div className="jumbo homewrap pb-5">
         <Header />
@@ -20,7 +24,7 @@ const Jumbo = ({title,cta}) => {
             </div>
             <div class="row">
               <div className="col-lg-12 mt-5">
-                <button className="btn btn-warning btn-lg text-uppercase">
+                <button className="btn btn-warning btn-lg text-uppercase" onClick={() => setShow(!show)}>
                   {cta}
                 </button>
               </div>

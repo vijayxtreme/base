@@ -1,17 +1,11 @@
-import { Link } from "gatsby"
 import PropTypes from "prop-types"
-import React, { useState } from "react"
+import React, { useContext } from "react"
 import logo from "../images/hackbuddy.svg"
-import Container from "react-bootstrap/Container"
-import Row from "react-bootstrap/Row"
-import Col from "react-bootstrap/Col"
 import Nav from "react-bootstrap/Nav"
 import Navbar from "react-bootstrap/Navbar"
-import NavDropdown from "react-bootstrap/NavDropdown"
-import Form from "react-bootstrap/Form"
-import FormControl from "react-bootstrap/FormControl"
-import Button from "react-bootstrap/Button"
-import Modal from "react-bootstrap/Modal"
+import Button from 'react-bootstrap/Button'
+import {ToggleContext} from '../components/layout'
+
 
 const links = [
   { name: `Blog`, linkTo: `blog` },
@@ -22,12 +16,8 @@ const links = [
 ]
 
 const Header = ({ siteTitle, className }) => {
-  const [show, setShow] = useState(false)
-  const handleClose = () => setShow(false)
-  const handleShow = () => setShow(true)
-
+  const { show, setShow } = useContext(ToggleContext)
   return (
-
     <>
       <header className="">
         <Navbar bg="light" expand="lg">
@@ -45,7 +35,7 @@ const Header = ({ siteTitle, className }) => {
                 )
               })}
               <Nav.Link>
-                <Button variant="primary" onClick={handleShow}>
+                <Button variant="primary" onClick={() => setShow(!show)}>
                   Launch demo modal
                 </Button>
               </Nav.Link>
@@ -53,20 +43,6 @@ const Header = ({ siteTitle, className }) => {
           </Navbar.Collapse>
         </Navbar>
       </header>
-        <Modal show={show} onHide={handleClose}>
-          <Modal.Header closeButton>
-            <Modal.Title>Modal heading</Modal.Title>
-          </Modal.Header>
-          <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
-          <Modal.Footer>
-            <Button variant="secondary" onClick={handleClose}>
-              Close
-            </Button>
-            <Button variant="primary" onClick={handleClose}>
-              Save Changes
-            </Button>
-          </Modal.Footer>
-        </Modal>      
     </>
   )
 }
